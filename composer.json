@@ -1,0 +1,45 @@
+{
+    "name": "farrokhpeyghayyem/wmenu-builder",
+    "description": "Drag and drop menu generator like WordPress for Laravel 9, 10, 11",
+    "keywords": ["Laravel", "Menu", "Builder", "WordPress", "Admin"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Farrokh Peyghayyem",
+            "email": "your-email@example.com",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Rendy Harimayco",
+            "email": "rendyharimayco@gmail.com",
+            "role": "Original Developer"
+        },
+        {
+            "name": "Cristian Garcia",
+            "email": "informacion@cristiangarcia.co",
+            "role": "Original Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^9.0 || ^10.0 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Harimayco\\Menu\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Harimayco\\Menu\\MenuServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "Harimayco\\Menu\\Facades\\Menu"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
