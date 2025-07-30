@@ -1,5 +1,5 @@
 {
-    "name": "farrokhpeyghayyem/wmenu-builder",
+    "name": "shazin-menu/wmenu-builder",
     "description": "Drag and drop menu generator like WordPress for Laravel 9, 10, 11",
     "keywords": ["Laravel", "Menu", "Builder", "WordPress", "Admin"],
     "type": "library",
