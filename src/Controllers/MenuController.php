@@ -14,7 +14,7 @@ class MenuController extends Controller
     {
         $menu = new Menus();
         $menu->name = request()->input("menuname");
-        $menu->locale = session('locale');
+        $menu->locale = session('locale')??'fa';
         $menu->save();
 
         return response()->json(["resp" => $menu->id]);
@@ -96,7 +96,7 @@ class MenuController extends Controller
         $menu = Menus::find(request()->input("idmenu"));
         if ($menu) {
             $menu->name = request()->input("menuname");
-            $menu->locale = session('locale');
+            $menu->locale = session('locale')??'fa';
             $menu->save();
         }
 
